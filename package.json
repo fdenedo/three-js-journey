@@ -1,0 +1,40 @@
+{
+  "name": "threejs-journey",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My repo for Three.js Journey",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "vercel --prod",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-lessons": "node scripts/generate-lessons.js",
+    "migrate-lessons": "node scripts/migrate-lessons.js",
+    "clean-polyhaven": "node scripts/clean-polyhaven.js",
+    "import-textures": "node scripts/import-textures.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cannon": "^0.1.13",
+    "@types/node": "^22.15.21",
+    "@types/three": "^0.176.0",
+    "chalk": "^5.4.1",
+    "inquirer": "^12.6.2",
+    "ora": "^8.2.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.4",
+    "vite-plugin-glsl": "^1.4.2",
+    "yargs": "^17.7.2"
+  },
+  "dependencies": {
+    "cannon-es": "^0.20.0",
+    "gsap": "~3.12.7",
+    "lil-gui": "^0.20.0",
+    "three": "^0.176.0",
+    "vercel": "^42.1.1"
+  }
+}
